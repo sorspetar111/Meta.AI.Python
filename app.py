@@ -1,5 +1,6 @@
 import gradio as gr
 import os
+
 from datasets import load_dataset
 from transformers import AutoTokenizer, AutoModelForCausalLM, Trainer, TrainingArguments
 from huggingface_hub import login
@@ -23,10 +24,10 @@ tokenizer = AutoTokenizer.from_pretrained(model_name)
 
 def train_model(epochs=3):
     training_args = TrainingArguments(
-        output_dir="output",  # Adjust output directory
-        per_device_train_batch_size=8,  # Adjust batch size
+        output_dir="output", 
+        per_device_train_batch_size=8,  
         num_train_epochs=epochs,
-        evaluation_strategy="epoch",  # Adjust evaluation strategy
+        evaluation_strategy="epoch",  
     )
 
     trainer = Trainer(
@@ -59,7 +60,4 @@ interface = gr.Interface(
 
 train_model()  
 interface.launch()
-
-
-
 

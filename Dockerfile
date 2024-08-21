@@ -23,3 +23,4 @@ COPY --chown=user . /app
 COPY --chown=user app.py /app/app.py
 
 CMD ["python", "app.py"]
+
