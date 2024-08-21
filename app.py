@@ -232,7 +232,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 #  token = os.environ['sorsw']
-token = 'hf_nxzWIDzrhpRvvlomRrRIzDygOFeZcwJBJ'+'M';
+token = 'TOKEN';
 login(token)
 
 
