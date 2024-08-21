@@ -1,5 +1,5 @@
 {
-	"model_name": "Meta-Llama-3-8B",
+	"model_name": "Meta-Llama-3.1-8B",
 	"version": "1.0",
 	"author": "Your Name",
 	"description": "Configuration settings for Meta-Llama-3-8B model."
